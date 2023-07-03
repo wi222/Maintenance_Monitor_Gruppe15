@@ -12,6 +12,8 @@ class MessageControllerTest {
         assertEquals("Everything works as expected", controller.getMessage());
         controller.setMessage("This is a test message");
         assertEquals("This is a test message",controller.getMessage());
+        controller.resetMessage();
+        assertEquals("Everything works as expected",controller.getMessage());
 
     }
 }
