@@ -12,4 +12,10 @@ public class MessageController {
     public String getMessage() {
         return message;
     }
+
+    @GetMapping("/api/message/set")
+    public String setMessage(@RequestParam String m) {
+        this.message = m;
+        return "ok";
+    }
 }

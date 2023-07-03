@@ -10,6 +10,8 @@ class MessageControllerTest {
     void getMessage() {
         MessageController controller = new MessageController();
         assertEquals("Everything works as expected", controller.getMessage());
+        controller.setMessage("This is a test message");
+        assertEquals("This is a test message",controller.getMessage());
 
     }
 }
